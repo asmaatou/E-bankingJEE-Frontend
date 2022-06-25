@@ -17,7 +17,7 @@
         <table class="table">
           <thead>
           <tr>
-            <th>ID</th><th>Name</th><th>Email</th>
+            <th>ID</th><th>Name</th><th>Email</th><th>Delete</th>
           </tr>
           </thead>
           <tbody>
@@ -28,6 +28,11 @@
             <td>
               <button (click)="handleDeleteCustomer(c)" class="btn btn-danger">
                 <i class="bi bi-trash"></i>
+              </button>
+            </td>
+            <td>
+              <button (click)="handleCustomerAccounts(c)" class="btn btn-success">
+                Accounts
               </button>
             </td>
           </tr>
